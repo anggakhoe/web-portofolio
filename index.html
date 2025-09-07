@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">PortofolioKu</h1>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">Tentang Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+<section class="hero">
+  <div class="profile-pic">
+    <img src="https://i.pinimg.com/1200x/ee/93/63/ee936370a2fac1b9e90d673994b3fac4.jpg" alt="Foto Profil">
+  </div>
+  <h2>Halo, saya <span>Steven Khosasi</span></h2>
+  <p>Photographer | Design Graphic | Freelancer</p>
+  <a href="about.html" class="btn">Tentang Saya</a>
+</section>
+
+
+  <!-- Projects -->
+<section class="projects">
+  <h2>My Projects</h2>
+  <div class="project-list">
+    <div class="project-card">
+      <img src="https://i.pinimg.com/1200x/54/c9/0d/54c90de23fa4ff81b240c5777d0bca3d.jpg" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>Wedding Photography</p>
+    </div>
+    <div class="project-card">
+      <img src="https://i.pinimg.com/736x/5c/d3/0a/5cd30ad26b80a6f24fba5cbb6bf76b77.jpg" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>Wisuda Photography</p>
+    </div>
+    <div class="project-card">
+      <img src="https://i.pinimg.com/736x/39/14/64/3914640839f31b30a16106ef73183e6f.jpg" alt="Project 3">
+      <h3>Project 3</h3>
+      <p>Event Photography</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Script Modal -->
+  <script>
+    function openModal(url) {
+      document.getElementById("projectModal").style.display = "flex";
+      document.getElementById("projectFrame").src = url;
+    }
+    function closeModal() {
+      document.getElementById("projectModal").style.display = "none";
+      document.getElementById("projectFrame").src = "";
+    }
+  </script>
+</body>
+</html>
